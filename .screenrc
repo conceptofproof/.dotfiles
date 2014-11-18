@@ -1,3 +1,13 @@
-# tabs / status bar at bottom of display
- hardstatus alwayslastline
- hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+startup_message off
+vbell off
+escape ``
+# Bind tick+a to show the tick character
+escape `a
+
+# Window list at the bottom. hostname, centered tabs and redmarked active windows:
+#shelltitle '$ |'
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%? %= %{g}][%{B} %m/%d %{W}%c %{g}]'
+
+defscrollback 50000
+
