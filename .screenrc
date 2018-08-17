@@ -2,7 +2,7 @@ startup_message off
 vbell off
 escape ``
 # Bind tick+a to show the tick character
-escape `a
+escape `e
 
 # Window list at the bottom. hostname, centered tabs and redmarked active windows:
 #shelltitle '$ |'
